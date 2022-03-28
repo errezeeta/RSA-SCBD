@@ -12,7 +12,6 @@ const main = async function(){
     } else{
         console.log("WORKING")
         console.log(m)
-        console.log(m)
         console.log(d)
         console.log(c)
     }

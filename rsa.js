@@ -29,6 +29,15 @@ class RsaPrivateKey {
   verify (s){
     return bcu.modPow(s, this.e, this.n)
   }
+
+  blindSign (m){
+    const nonce = bcu.randBetween(this.n - 1n)
+    console.log (nonce)
+    const ms= m * nonce
+    const res = ""+ms+","+nonce
+    console.log(res)
+    return res
+  }
 }
 
 class rsaKeyPair {

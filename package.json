@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bigint-conversion": "^2.2.1",
+    "bigint-crypto-utils": "^3.0.23"
+  }
+}
